@@ -1,0 +1,35 @@
+{
+  "name": "message-queue-redis-jwt-demo",
+  "version": "1.0.0",
+  "description": "Demo: Order confirmation via Redis Queue with JWT authentication and background jobs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "worker": "node src/workers/emailWorker.js",
+    "dev": "nodemon src/index.js",
+    "worker:dev": "nodemon src/workers/emailWorker.js"
+  },
+  "keywords": [
+    "redis",
+    "message-queue",
+    "jwt",
+    "background-job",
+    "email",
+    "sms",
+    "order"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "nodemailer": "^7.0.12",
+    "redis": "^4.6.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "redis-server": "^1.2.2"
+  }
+}
